@@ -9,7 +9,7 @@ class GeminiService:
     def __init__(self, api_key):
         genai.configure(api_key=api_key)
         # Using gemini-2.5-flash: newer model with better quotas
-        self.model = genai.GenerativeModel('gemini-2.5-flash')
+        self.model = genai.GenerativeModel('gemini-3.5-flash')
     
     def evaluate_answer(self, student_answer, model_answer, max_marks, question=None):
         """Evaluate student answer against model answer"""
